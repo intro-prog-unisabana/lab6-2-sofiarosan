@@ -10,8 +10,9 @@ def assignment_averages(data):
     result={}
 
     for student in data:
-        assigments = data[student].keys()
-    for assignment in assigments:
+        assignments = data[student].keys()
+        break
+    for assignment in assignments:
         total=0
         count=0
         for student in data:
