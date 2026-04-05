@@ -11,13 +11,13 @@ def assignment_averages(data):
 
     for student in data:
         assigments = data[student].keys()
-    for assigment in assigments:
+    for assignment in assigments:
         total=0
         count=0
         for student in data:
-           total += data[student][assigment]
+           total += data[student][assignment]
            count += 1
-        result[assigment] =round(total/count)
+        result[assignment] =round(total/count)
     return result
 def initialize_dict(name, grades):
     return {name: grades}
