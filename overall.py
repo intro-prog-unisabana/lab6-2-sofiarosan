@@ -6,7 +6,7 @@ def student_averages(data):
         result[student]=round(avg)
     return result
 
-def assigment_averages(data):
+def assingment_averages(data):
     result={}
 
     for student in data:
@@ -19,4 +19,5 @@ def assigment_averages(data):
            count += 1
         result[assigment] =round(total/count)
     return result
-    
+def initialize_dict(name, grades):
+    return {name: grades}
