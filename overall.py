@@ -6,7 +6,7 @@ def student_averages(data):
         result[student]=round(avg)
     return result
 
-def assingment_averages(data):
+def assignment_averages(data):
     result={}
 
     for student in data:
