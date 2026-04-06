@@ -8,6 +8,8 @@ def student_averages(data):
 
 def assignment_averages(data):
     result={}
+    if not data:
+        return {}
 
     for student in data:
         assignments = data[student].keys()
