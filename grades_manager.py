@@ -9,7 +9,7 @@ def add_student(student_grades=None):
 
     subjects = {}
     entrada= input ("Enter subject and grade (or 'exit' to finish):\n").strip()
-    while entrada.lower!= "exit":
+    while entrada.lower()!= "exit":
 
         if "," in entrada:
 
