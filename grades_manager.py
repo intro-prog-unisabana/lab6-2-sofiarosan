@@ -8,23 +8,17 @@ def add_student(student_grades=None):
     name = input("Enter student name:\n").strip().title()
 
     subjects = {}
+    entrada= input ("Enter subject and grade (or 'exit' to finish):\n").strip()
+    while entrada.lower!= "exit":
 
-    while True:
-
-        entrada= input ("Enter subject and grade (or 'exit' to finish):\n").strip()
-        if entrada.lower() == exit:
-            break
-
-        try:
+        if "," in entrada:
 
             subject, grade= entrada.split(",")
             subject = subject.strip().title()
             grade=float(grade.strip())
-        except:
-            continue
-
-
-        subjects[subject]=grade
+            subjects[subject]=grade
+        
+        entrada= input ("Enter subject and grade (or 'exit' to finish):\n").strip()
     
     student_grades[name]= subjects
 
