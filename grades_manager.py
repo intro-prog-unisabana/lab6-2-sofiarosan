@@ -14,6 +14,8 @@ def add_student(student_grades=None):
         entrada= input ("Enter subject and grade (or 'exit' to finish):\n").strip()
         if entrada.lower() == exit:
             break
+        if "," not in entrada:
+            continue
 
         subject, grade= entrada.split(",")
         subject = subject.strip().title()
